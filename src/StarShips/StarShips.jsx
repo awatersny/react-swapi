@@ -20,11 +20,9 @@ const StarShips = (props) => {
             className='ship-div'
             key={starShip.name}
           >
-            <div
-              className='link'
-            >
-              <h2>{starShip.name}</h2>
-            </div>
+            <h2>
+              {starShip.name}
+            </h2>
           </Link>
         )
         :

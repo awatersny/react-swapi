@@ -1,6 +1,6 @@
 h1 {
   margin-top: 0;
-  padding: .5rem;
+  padding: 1rem;
   text-align: center;
   background-color: #003;
   color: white;
@@ -23,7 +23,8 @@ h1 {
   margin: 2.5rem;
   width: 20rem;
   color: #fff;
-  text-align: center
+  text-align: center;
+  text-decoration: none;
 }
 
 .ship-div:hover {
@@ -45,13 +46,8 @@ h1 {
   justify-content: space-between;
 }
 
-.link {
+.return:visited{
   color: #fff;
-  text-decoration: none;
-}
-
-.link:visited, .return:visited{
-  color: #fff
 }
 
 #deetz {
