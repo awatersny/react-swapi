@@ -12,8 +12,6 @@ const StarShipPage = (props) => {
     .then(shipData => setShipDetails(shipData))
   }, [])
 
-  console.log(shipDetails)
-
   return ( 
     <div 
       className='icon-container'
@@ -21,11 +19,17 @@ const StarShipPage = (props) => {
     >
       {shipDetails.length ? 
         <div className='ship-deet-div'>
-          <h2>NAME: {shipDetails.name}</h2>
-          <h2>MODEL: {shipDetails.model}</h2>
+          <h2 className='ship-field'>
+            <span>NAME:</span> 
+            {shipDetails.name}
+          </h2>
+          <h2 className='ship-field'>
+            <span>MODEL:</span> 
+            {shipDetails.model}
+          </h2>
           <Link 
             to='/'
-            className='link'
+            className='return'
           >
             <h2>RETURN</h2>
           </Link>

@@ -10,24 +10,22 @@ const StarShips = (props) => {
     .then(starShipData => setStarShips(starShipData.results))
   }, []);
 
-  console.log(starShips)
-
   return ( 
     <div className='icon-container'>
       {starShips.length ?
         starShips.map(starShip => 
-          <div 
+          <Link
+            to={starShip.url.slice(21)}
+            state={{starShip}}
             className='ship-div'
             key={starShip.name}
           >
-            <Link
-              to={starShip.url.slice(21)}
-              state={{starShip}}
+            <div
               className='link'
             >
               <h2>{starShip.name}</h2>
-            </Link>
-          </div>
+            </div>
+          </Link>
         )
         :
         <h2>Loading starship data...</h2>

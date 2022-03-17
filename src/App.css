@@ -34,10 +34,15 @@ h1 {
 .ship-deet-div {
   background-color: #044;
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 1rem 3rem;
   margin: 1rem;
-  width: 20rem;
+  width: 30rem;
   color: #fff;
+}
+
+.ship-field {
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
@@ -45,7 +50,7 @@ h1 {
   text-decoration: none;
 }
 
-.link:visited {
+.link:visited, .return:visited{
   color: #fff
 }
 
