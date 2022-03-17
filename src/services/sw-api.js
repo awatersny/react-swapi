@@ -5,7 +5,7 @@ export function getAllStarShips() {
   .then(res => res.json())
 }
 
-export function getStarShipDetails(apiUrl) {
+export function getDetails(apiUrl) {
   return fetch(`${apiUrl}`)
   .then(res => res.json())
 }
