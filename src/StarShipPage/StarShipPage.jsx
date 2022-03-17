@@ -15,21 +15,22 @@ const StarShipPage = (props) => {
   console.log(shipDetails)
 
   return ( 
-    <>
+    <div className='icon-container'>
       {shipDetails.length ? 
-        <div>
+        <div className='ship-deet-div'>
           <h2>NAME: {shipDetails.name}</h2>
           <h2>MODEL: {shipDetails.model}</h2>
           <Link 
             to='/'
+            className='link'
           >
-            RETURN
+            <h2>RETURN</h2>
           </Link>
         </div>
       : 
         <h2>Loading ship details...</h2>
       }
-    </> 
+    </div> 
   );
 }
 
