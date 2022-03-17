@@ -8,18 +8,25 @@ const StarShips = (props) => {
   useEffect(()=>{
     getAllStarShips()
     .then(starShipData => setStarShips(starShipData.results))
-  });
+  }, []);
 
-  console.log(starShips.map)
+  console.log(starShips)
 
   return ( 
     <>
-      <h2>All StarShips</h2>
-      {starShips.map(starShip => 
-        <div key={starShip.name}>
-          <h1>StarShip</h1>
-        </div>
-      )}
+        {starShips.map(starShip => 
+          <div 
+            className='icon-container'
+            key={starShip.name}
+          >
+            <Link
+              to={starShip.url.slice(21)}
+              state={{starShip}}
+            >
+              <h2>{starShip.name}</h2>
+            </Link>
+          </div>
+        )}
     </>
   );
 }

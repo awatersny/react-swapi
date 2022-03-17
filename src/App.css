@@ -2,6 +2,11 @@ h1 {
   margin-top: 0;
   padding: .5rem;
   text-align: center;
-  background-color: #008;
+  background-color: #003;
   color: white;
+}
+
+.icon-container {
+  background-color: #099;
+  color: #fff;
 }

@@ -1,12 +1,22 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import StarShips from './StarShips/StarShips'
+import StarShipPage from './StarShipPage/StarShipPage';
 
 function App() {
   return (
     <>
       <h1>Star Wars StarShips</h1>
-      <StarShips />
+      <Routes>
+        <Route 
+          path='' 
+          element={<StarShips />}
+        />
+        <Route 
+          path='starships/:id' 
+          element={<StarShipPage />}
+        />
+      </Routes>
     </>
   );
 }
