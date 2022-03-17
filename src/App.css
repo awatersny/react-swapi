@@ -20,10 +20,15 @@ h1 {
   background-color: #044;
   border-radius: .7rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2.5rem;
   width: 20rem;
   color: #fff;
   text-align: center
+}
+
+.ship-div:hover {
+  padding: 2.5rem;
+  margin: 1rem;
 }
 
 .ship-deet-div {
@@ -42,4 +47,10 @@ h1 {
 
 .link:visited {
   color: #fff
+}
+
+#deetz {
+  display: flex;
+  margin-top: 15rem;
+  align-items: center;
 }

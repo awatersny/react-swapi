@@ -15,7 +15,10 @@ const StarShipPage = (props) => {
   console.log(shipDetails)
 
   return ( 
-    <div className='icon-container'>
+    <div 
+      className='icon-container'
+      id='deetz'
+    >
       {shipDetails.length ? 
         <div className='ship-deet-div'>
           <h2>NAME: {shipDetails.name}</h2>
