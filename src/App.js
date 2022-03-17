@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import StarShips from './pages/StarShips/StarShips'
+import StarShips from './components/StarShips/StarShips'
 import StarShipPage from './pages/StarShipPage/StarShipPage';
 
 function App() {
