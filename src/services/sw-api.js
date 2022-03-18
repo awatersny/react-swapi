@@ -1,5 +1,3 @@
-import PilotList from "../components/PilotList/PilotList"
-
 const baseUrl = 'https://swapi.dev/api/'
 
 export function getAllStarShips() {
@@ -13,7 +11,10 @@ export function getDetails(apiUrl) {
 }
 
 export async function getPilots(urls) {
-  const promises = urls.map(url => fetch(url).then(res => res.json()))
+  const promises = urls.map(url => {
+    return fetch(url)
+    .then(res => res.json())
+  })
   const pilotObjects = await Promise.all(promises)
   return pilotObjects
 }
